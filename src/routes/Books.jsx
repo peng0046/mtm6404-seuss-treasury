@@ -13,8 +13,8 @@ function Books() {
 
   return (
     <div>
-      <h1>Seuss Treasury</h1>
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
+      <h1 style={{ textAlign: "center" }}>Seuss Treasury</h1>
+      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
         {books.map((book) => (
           <Link key={book.id} to={`/books/${book.id}`} style={{ margin: "10px" }}>
             <img src={book.image} alt={book.title} width="150" />
